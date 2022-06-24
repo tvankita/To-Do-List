@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List Document</title>
+    <link rel="stylesheet" href="to-do.css" />
+    </head>
+
+    <body>
+        <header>
+	    <input type="text" id="the-filter" onkeyup="myFunction()" placeholder="Search Your Task ..." />
+        <h1>Creat Your Task List</h1>
+        <form id="myform" input="Li">            
+            <input type="text" name="forminput" id="forminput" placeholder="Enter Your Task ..."/>
+            <input type="submit" id="formsubmit" value="Add task"/>
+        </form>
+    </header>
+
+    <main>
+		<section class="eventlist">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="My All Task Show Here..."
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+
+        <script src="to-do.js"></script>
+    </body>
+    
+</html>
+
+

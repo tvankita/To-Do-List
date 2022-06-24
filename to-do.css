@@ -1,0 +1,183 @@
+:root {
+    --dark: #374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --gray:#e2e2e2;
+    --light: #EEE;
+    --pink: #c2ac3a;
+    --purple: #bf662e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'jost' 'sans-serif';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #fff;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0, auto;
+    width: 100%;
+
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+#myform {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#forminput {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 24px;
+    color: var(--gray);
+    font-size: 17px;  
+}
+
+#forminput::placeholder {
+    color:var(--gray) ;
+}
+
+#formsubmit {
+    color: var(--pink);
+    font-size: 17px;
+    font-weight: 400px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--pink),
+     var(--purple));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     transition: 0.4s;   
+}
+
+#formsubmit:hover {
+    opacity: 0.8;
+}
+
+#formsubmit:active {
+    opacity: 0.6; 
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.eventlist {
+    padding: 15px;
+}
+
+.eventlist h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .todo-list {
+	flex: 1 1 0%;
+}
+
+.task .todo-list .text {
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.task .todo-list .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.tasks .actions .button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 25px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.tasks .actions .button:hover {
+    opacity: 0.8;
+}
+
+.tasks .actions .button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .deletet {
+	color: rgb(220, 210, 20);
+}
+
+#search.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25erm;
+}
+
+input {
+    font-size: 1rem;
+}
+
+#the-filter {
+    background-color: var(--darker);
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 24px;
+    color: var(--gray);
+    font-size: 17px;
+  } 
+  
+  
